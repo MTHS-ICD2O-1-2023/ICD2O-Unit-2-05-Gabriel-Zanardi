@@ -17,5 +17,5 @@ function salaryIncome() {
 
   // output
   document.getElementById("income-salary").innerHTML =
-    "your pay is: CAD$" + roundedAnswer + "."
+    "your pay is: CAD$" + roundedAnswer 
 }
