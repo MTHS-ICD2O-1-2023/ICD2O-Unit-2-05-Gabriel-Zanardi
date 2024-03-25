@@ -4,15 +4,18 @@
 // Created on: Mar 2024
 // This file contains the JS functions for index.html
 
-function myButtonClicked() {
+function salaryIncome() {
+  const TAX_RATE = 0.18
+
   // input
-  const radiusNumber = document.getElementById("radius-number").value
+  const hoursWorked = document.getElementById("hours-worked").value
+  const hourlyRate = document.getElementById("hourly-rate").value
 
   // process
-  const areaOfCircle = (2 * Math.PI * radiusNumber)
-  const roundedAnswer = areaOfCircle.toFixed(2)
+  const pay = (hoursWorked * hourlyRate) * (1.00 * TAX_RATE)
+  const roundedAnswer = pay.toFixed(2)
 
   // output
-  document.getElementById("area-of-a-cicle").innerHTML =
-    "The area of this circle is: " + roundedAnswer + " cm²."
+  document.getElementById("income-salary").innerHTML =
+    "your pay is: $" + roundedAnswer + " ."
 }
