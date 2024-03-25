@@ -12,18 +12,14 @@ function salaryIncome() {
   const hourlyRate = document.getElementById("hourly-rate").value
 
   // process
-  const pay = (hoursWorked * hourlyRate) * (1.00 * TAX_RATE)
+  const pay = (hoursWorked * hourlyRate) * (1.00 - TAX_RATE)
   const roundedAnswer = pay.toFixed(2)
-
-  // output
-  document.getElementById("income-salary").innerHTML =
-    "your pay is: CAD$" + roundedAnswer 
-
-  // process
   const payTwo = (hoursWorked * hourlyRate) * TAX_RATE
   const roundedAnswerTwo = payTwo.toFixed(2)
 
   // output
-  document.getElementById(income-tax).innerHTML = 
+  document.getElementById("income-salary").innerHTML =
+    "your pay is: CAD$" + roundedAnswer 
+    document.getElementById("government-tax").innerHTML = 
     "the government will take: CAD$" + roundedAnswerTwo
 }
