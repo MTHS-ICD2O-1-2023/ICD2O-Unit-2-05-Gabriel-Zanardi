@@ -4,6 +4,8 @@
 // Created on: Mar 2024
 // This file contains the JS functions for index.html
 
+"use strict"
+
 function salaryIncome() {
   const TAX_RATE = 0.18
 
